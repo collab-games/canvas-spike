@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Grid from './components/Grid';
+import Lobby from "./components/Lobby";
 
 ReactDOM.render(
-    <Grid />,
+    <Lobby />,
   document.getElementById('root')
 );
