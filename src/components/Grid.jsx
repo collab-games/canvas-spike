@@ -2,6 +2,8 @@ import React from 'react';
 import LC from "literallycanvas";
 import 'literallycanvas/scss/literallycanvas.scss';
 
+import Button from 'react-bootstrap/Button';
+
 const click = (lc) => {
   console.log("click ++++++++++++++", lc);
 };
@@ -43,7 +45,7 @@ class Grid extends React.Component {
           imageURLPrefix="/img"
           onInit={this.initFunc}
         />
-        <button onClick={this.saveSnapshot}>Save</button>
+        <Button onClick={this.saveSnapshot}>Save</Button>
         <LC.LiterallyCanvasReactComponent
           imageURLPrefix="/img"
           onInit={this.secondFunc}/>
