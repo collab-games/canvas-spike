@@ -1,29 +1,28 @@
 import React from 'react';
 
 import Navbar from 'react-bootstrap/Navbar';
-import Card from 'react-bootstrap/Card';
+import ReactCardFlip from 'react-card-flip';
+import CardFront from "./CardFront";
 import './Lobby.css';
 
 class Lobby extends React.Component {
 
   render() {
-    return <div>
+    return (
       <div>
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand>Collab Games</Navbar.Brand>
-        </Navbar>
-      </div>
-      <div align="center" className="turn-in-card">
-        <Card className="turn-in-card-image" body={false}>
-          <Card.Img variant="top" src="/logo192.png"/>
-        </Card>
-        <Card className="turn-in-card-body">
-          <Card.Body >
+        <div>
+          <Navbar bg="dark" variant="dark">
+            <Navbar.Brand>Collab Games</Navbar.Brand>
+          </Navbar>
+        </div>
+        <div align="center">
+          <ReactCardFlip>
+            <CardFront />
             <h1>Hey</h1>
-          </Card.Body>
-        </Card>
+          </ReactCardFlip>
+        </div>
       </div>
-    </div>
+    )
   }
 }
 
